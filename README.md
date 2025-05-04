@@ -33,7 +33,7 @@ CoLa is a highly communication-efficient distributed SpMM framework. CoLa is acc
     The processed data is in the `storage` folder.
 
 # 2. Build and Run
-Our running script is provided in the `slurm_script` folder, where CoLa is running as a slurm job in a HPC system. Make sure to set the correct environment variables in the slurm and cmake script based on your own environment e.g., NVSHMEM_HOME, MPI_HOME, CUDA_HOME, etc.
+Our running scripts are provided in the `slurm_script` folder, where CoLa is running as a slurm job in a HPC system. Make sure to set the correct environment variables in the slurm and cmake scripts based on your own environment e.g., NVSHMEM_HOME, MPI_HOME, CUDA_HOME, etc.
 
 - compile the code
     ```bash 
@@ -42,6 +42,6 @@ Our running script is provided in the `slurm_script` folder, where CoLa is runni
 - run the code
     ```bash
     # this script provides an example CoLa under 1node-4GPU test
-    # some modification is needed for CoLa under different GPU platforms based on your own environment
+    # some modifications are needed for CoLa under different GPU platforms based on your own environment
     sbatch cola_ppl_batch.slurm
     ```
